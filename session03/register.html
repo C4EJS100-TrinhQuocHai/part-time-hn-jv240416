@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            /* display: inline-block; */
+            /* label là thẻ inline
+            đã là inline thì không set width-height
+             */
+             display: inline-block;
+            width: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Tạo một form cho người dùng đăng kí
+        Các thuộc tính hay dùng trong input
+        type= "text" : mặc định
+        type= password
+        type= email : bắt buộc khi nhập phải có @
+        type= date : tạo ra 1 nhập gồm ngày tháng năm
+        type=time : thời gian
+        type= color: để hiển thị màu chọn 
+        type= checkbox : hiển thị ô chọn 
+        type= radio ( các ô input mà có trị ở thuộc tính name giống nhau
+        thì chỉ lựa chọn được 1 cái)
+        button: nút bấm để gửi dữ liệu lên server
+        action: địa chỉ nơi nhận dữ liệu
+        regex : validate dữ liệu
+        placeholder: gợi ý nhập 
+        required : yêu cầu bắt buộc phải nhập
+        disabled :  che các element không tương tác được
+        autocomplete ="on" : giá trị mặc định là on nếu ="off" thì sẽ không 
+        hiển thị phần gợi ý nhập
+        id: dùng để dịnh cho thẻ (element)-giống như căn cước công dân
+        
+     -->
+    <form action="" autocomplete="on">
+        <label class="a" for="username" >userName</label>
+        <input id="username" placeholder="mời nhập tên" > <br><!-- break -->
+        <label class="a"    for="">email</label>
+        <input  id="email" required type="email"> <br>
+        <label for="">password</label>
+        <input type="password"> <br>
+        <label for="">confirmpassword</label>
+        <input type="text"> <br>
+        <label for="">date</label> 
+        <input type="date"> <br>
+        <label for="">time</label>
+        <input type="time"> <br>
+        <label for="">color</label>
+        <input type="color">
+        A<input type="checkbox">
+        B<input type="checkbox"> <br>
+        <p for="">giới tính</p>
+        nam<input type="radio" name="gender1">
+        nữ<input type="radio" name="gender1">
+        khác<input type="radio" name="gender1">
+        <select name="" id="">
+            <option value="">Hà nội</option>
+            <option value="">HCM</option>
+            <option value="">Hà Nam</option>
+        </select> <br>
+        <label for=""> disabled</label>
+        <input type="text" disabled>
+        <textarea name="" id="" cols="15" rows="5"></textarea>
+        <button>register</button> 
+    </form>
+    
+    <!-- SEO
+            search engine optimization
+     -->
+     <nav></nav> <!-- navigation -->
+     <div></div> <!-- division -->
+</body>
+
+</html>
